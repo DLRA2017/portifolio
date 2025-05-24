@@ -1,103 +1,124 @@
-body {
+/* Reset básico */
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fdfdfd;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  background: 
+    url('https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg') no-repeat center center fixed,
+    url('https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg') no-repeat center center fixed;
+  background-size: cover, cover;
+  background-blend-mode: screen;
+  padding: 40px;
+}
+
+/* Container centralizado */
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
   max-width: 900px;
   margin: 0 auto;
+  background: rgba(0,0,0,0.65);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
 }
 
-.header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.photo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 3px solid #000;
-  background-image: url('foto.jpg'); /* Substitua pelo caminho da sua foto */
-  background-size: cover;
-  background-position: center;
-  margin-right: 20px;
-}
-
-.title {
-  font-size: 2.2em;
-  font-weight: bold;
-}
-
-.description {
+/* Cabeçalho */
+h1, h2, h3 {
   text-align: center;
-  line-height: 1.5;
-  font-size: 1em;
-  margin-top: 10px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
 }
 
-.videos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 40px;
+h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
 }
 
-.video-box {
-  width: 200px;
-  height: 350px;
-  border: 2px solid #000;
-  border-radius: 20px;
-  overflow: hidden;
-  background-color: #eee;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
 }
 
-.video-box iframe {
-  width: 100%;
-  height: 100%;
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* Parágrafos */
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* Links */
+a {
+  color: #00cc99;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #66ffcc;
+  text-decoration: underline;
+}
+
+/* Botões gerais */
+button, .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
   border: none;
+  border-radius: 40px;
+  background: linear-gradient(45deg, #0052cc, #00cc99);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,204,153,0.6);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
 }
 
+button:hover, .btn:hover {
+  background: linear-gradient(45deg, #00cc99, #0052cc);
+  box-shadow: 0 8px 20px rgba(0,204,153,0.9);
+}
+
+/* Seções com espaçamento */
+section {
+  margin-bottom: 50px;
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: rgba(0, 204, 153, 0.2);
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #cceeea;
+  box-shadow: 0 2px 6px rgba(0, 204, 153, 0.3);
+}
+
+/* Rodapé */
 footer {
-  margin-top: 60px;
   text-align: center;
-  font-size: 0.9em;
-  color: #black;
-  padding: 20px;
-  border-top: 1px solid #ccc;
-  background-color: red;
-  color: white; /* Para o texto ficar visível */
-  margin-top: 60px;
-  text-align: center;
-  font-size: 0.9em;
-  padding: 20px;
-  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
-}
-
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .photo {
-    margin-bottom: 10px;
-  }
-  .videos {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+ 
