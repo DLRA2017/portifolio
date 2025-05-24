@@ -1,1 +1,123 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  background: 
+    url('https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg') no-repeat center center fixed,
+    url('https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg') no-repeat center center fixed;
+  background-size: cover, cover;
+  background-blend-mode: screen;
+  padding: 40px;
+}
+
+/* Container centralizado */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.65);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+/* Cabeçalho */
+h1, h2, h3 {
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* Parágrafos */
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* Links */
+a {
+  color: #00cc99;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #66ffcc;
+  text-decoration: underline;
+}
+
+/* Botões gerais */
+button, .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(45deg, #0052cc, #00cc99);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,204,153,0.6);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+button:hover, .btn:hover {
+  background: linear-gradient(45deg, #00cc99, #0052cc);
+  box-shadow: 0 8px 20px rgba(0,204,153,0.9);
+}
+
+/* Seções com espaçamento */
+section {
+  margin-bottom: 50px;
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: rgba(0, 204, 153, 0.2);
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: #cceeea;
+  box-shadow: 0 2px 6px rgba(0, 204, 153, 0.3);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
 
