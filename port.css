@@ -2,8 +2,9 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif
  background-color: #EEEEEE;
-
-  color: #fff;
+ background-color: rgba(0, 0, 0, 0.8); /* preto com 80% de opacidade */
+  color: white; /* texto branco para contraste */
+  
 }
 
 .container {
