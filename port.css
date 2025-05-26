@@ -81,8 +81,8 @@ footer {
   color: #black;
   padding: 20px;
   border-top: 1px solid #ccc;
-  background-color: red;
-  color: white; /* Para o texto ficar visível */
+  background-color: white;
+  color: black; /* Para o texto ficar visível */
   margin-top: 60px;
   text-align: center;
   font-size: 0.9em;
