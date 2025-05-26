@@ -1,10 +1,12 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif
- background-color: #EEEEEE;
- background-color: rgba(0, 0, 0, 0.8); /* preto com 80% de opacidade */
+
+
   color: white; /* texto branco para contraste */
-  
+  background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+  color: white;
+  font-family: sans-serif;
 }
 
 .container {
